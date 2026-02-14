@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Admission | Elite International School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">ELITE <span>SCHOOL</span></div>
+      <nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <div class="admission-banner">
+        <h1>Student Admission Portal 2026-27</h1>
+        <p>Please fill out the form carefully for registration.</p>
+    </div>
+
+    <section class="form-container">
+        <form id="detailedAdmissionForm">
+            
+            <div class="form-section">
+                <h3><i class="fas fa-user-graduate"></i> Student Information</h3>
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Date of Birth</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Gender</label>
+                        <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Applying for Class</label>
+                        <select required>
+                            <option value="">Choose Class</option>
+                            <option>Playgroup / Nursery</option>
+                            <option>Grade 1 - 5</option>
+                            <option>Grade 6 - 8</option>
+                            <option>O-Levels / Matric</option>
+                            <option>A-Levels / Inter</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3><i class="fas fa-users"></i> Parent / Guardian Information</h3>
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label>Father's Name</label>
+                        <input type="text" placeholder="Father's Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Occupation</label>
+                        <input type="text" placeholder="e.g. Business, Engineer">
+                    </div>
+                    <div class="input-group">
+                        <label>Contact Number</label>
+                        <input type="tel" placeholder="+92 300 1234567" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="example@mail.com">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3><i class="fas fa-map-marker-alt"></i> Contact & Previous Record</h3>
+                <div class="full-width">
+                    <label>Residential Address</label>
+                    <textarea placeholder="House #, Street, City" rows="3"></textarea>
+                </div>
+                <div class="form-grid" style="margin-top: 15px;">
+                    <div class="input-group">
+                        <label>Previous School Name</label>
+                        <input type="text" placeholder="If any">
+                    </div>
+                    <div class="input-group">
+                        <label>Upload Student Picture (Optional)</label>
+                        <input type="file" class="file-input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-footer">
+                <label class="checkbox-label">
+                    <input type="checkbox" required> I agree that all the information provided is correct.
+                </label>
+                <button type="submit" class="submit-btn-large">Submit Admission Application</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

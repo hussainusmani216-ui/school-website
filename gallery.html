@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Gallery | Elite School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ELITE <span>SCHOOL</span></div>
+      <nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+    </header>
+<section class="gallery-container">
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=800" onclick="openFullImg(this.src)" alt="Library">
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?auto=compress&cs=tinysrgb&w=800" onclick="openFullImg(this.src)" alt="Classroom">
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800" onclick="openFullImg(this.src)" alt="Students">
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/8471791/pexels-photo-8471791.jpeg?auto=compress&cs=tinysrgb&w=800" onclick="openFullImg(this.src)" alt="Science Lab">
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/159844/science-lab-biology-chemicals-159844.jpeg?auto=compress&cs=tinysrgb&w=800" onclick="openFullImg(this.src)" alt="Chemistry">
+    </div>
+    <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&cs=tinysrgb&w=800" onclick="openFullImg(this.src)" alt="Campus View">
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
